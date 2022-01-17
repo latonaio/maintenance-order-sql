@@ -1,6 +1,6 @@
 CREATE TABLE `maintenance_order_header_data`
 (
-  `MaintenanceOrder`                   varchar(12) NOT NULL,
+  `MaintenanceOrder`                   varchar(20) NOT NULL,
   `MaintenanceOrderType`               varchar(6) DEFAULT NULL,
   `Description`                        varchar(40) DEFAULT NULL,
   `LocationID`                         varchar(20) DEFAULT NULL,
@@ -60,6 +60,8 @@ CREATE TABLE `maintenance_order_header_data`
   `PrimaryTechnicalObjectLabel`        varchar(40) DEFAULT NULL,
   `PrimaryTechObjIsEquipOrFuncnlLoc`   varchar(20) DEFAULT NULL,
   `ResponsibleAstronaut`               varchar(20) DEFAULT NULL,
+  `CreatedDateTime`                    varchar(20) DEFAULT NULL,
+  `LastModifiedDateTime`               varchar(20) DEFAULT NULL,
     PRIMARY KEY (`MaintenanceOrder`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

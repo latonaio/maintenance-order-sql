@@ -1,8 +1,8 @@
 CREATE TABLE `maintenance_order_operation_data`
 (
-  `MaintenanceOrder`                  varchar(12) NOT NULL,
-  `MaintenanceOrderOperation`         varchar(4) NOT NULL,
-  `MaintenanceOrderSubOperation`      varchar(4) NOT NULL,
+  `MaintenanceOrder`                  varchar(20) NOT NULL,
+  `MaintenanceOrderOperation`         varchar(6) NOT NULL,
+  `MaintenanceOrderSubOperation`      varchar(6) NOT NULL,
   `LocationID`                        varchar(20) DEFAULT NULL,
   `Satellite`                         varchar(20) DEFAULT NULL,
   `Planet`                            varchar(20) DEFAULT NULL,
@@ -61,6 +61,8 @@ CREATE TABLE `maintenance_order_operation_data`
   `MaintOrdOpProcessPhaseCode`        varchar(2) DEFAULT NULL,
   `MaintOrdOpProcessSubPhaseCode`     varchar(4) DEFAULT NULL,
   `Status`                            varchar(40) DEFAULT NULL,
+  `CreatedDateTime`                   varchar(20) DEFAULT NULL,
+  `LastModifiedDateTime`              varchar(20) DEFAULT NULL,
     PRIMARY KEY (`MaintenanceOrder`, `MaintenanceOrderOperation`, `MaintenanceOrderSubOperation`),
     CONSTRAINT `MaintenanceOrderOperationData_fk` FOREIGN KEY (`MaintenanceOrder`) REFERENCES `maintenance_order_header_data` (`MaintenanceOrder`)
 ) ENGINE = InnoDB
