@@ -10,7 +10,7 @@ maintenance-order-sql には、sqlの設定ファイルとして、以下のフ�
 * maintenance-order-sql-header-data.sql（メンテナンスオーダー - ヘッダデータ）
 * maintenance-order-sql-object-list-item-data.sql（メンテナンスオーダー - オブジェクトリスト明細データ）
 * maintenance-order-sql-operation-data.sql（メンテナンスオーダー - 作業データ）
-* maintenance-order-sql-operation-astronaut-data.sql（メンテナンスオーダー - 作業宇宙飛行士データ）
+* maintenance-order-sql-operation-worker-data.sql（メンテナンスオーダー - 作業ワーカーデータ）
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 MySQLのセットアップ / Kubernetesの設定 / 具体的なSQLテーブルの作成方法、については、[mysql-kube](https://github.com/latonaio/mysql-kube)を参照ください。
