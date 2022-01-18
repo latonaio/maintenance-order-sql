@@ -5,6 +5,8 @@ CREATE TABLE `maintenance_order_object_list_item_data`
   `MaintenanceObjectListItem`      varchar(10) DEFAULT NULL,
   `Equipment`                      varchar(18) DEFAULT NULL,
   `EquipmentName`                  varchar(40) DEFAULT NULL,
+  `SpaceSuit`                      varchar(18) DEFAULT NULL,
+  `SpaceSuitName`                  varchar(40) DEFAULT NULL,
   `SerialNumber`                   varchar(18) DEFAULT NULL,
   `FunctionalLocation`             varchar(30) DEFAULT NULL,
   `Product`                        varchar(40) DEFAULT NULL,
