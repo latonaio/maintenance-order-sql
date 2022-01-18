@@ -32,7 +32,6 @@ CREATE TABLE `maintenance_order_header_data`
   `MaintOrdProcessPhaseCode`           varchar(2) DEFAULT NULL,
   `MaintOrdProcessSubPhaseCode`        varchar(4) DEFAULT NULL,
   `ReferenceElement`                   varchar(40) DEFAULT NULL,
-  `LocationID`                         varchar(20) DEFAULT NULL,
   `PrimaryEquipment`                   varchar(18) DEFAULT NULL,
   `PrimaryEquipmentName`               varchar(40) DEFAULT NULL,
   `PrimaryEquipmentSerialNumber`       varchar(18) DEFAULT NULL,
